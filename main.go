@@ -149,9 +149,11 @@ func UserGuess(round int) {
 		}
 		fmt.Printf("Case # %v contained:  %v \n", playerselected, mf(AvailableCases[playerselected]))
 		removeGuesses(playerselected)
-		time.Sleep(2 * time.Second)
-
 	}
+	if round < 11 {
+		fmt.Printf("Next round you will need to pick %v cases", requiredSelections[round+1])
+	}
+	time.Sleep(2 * time.Second)
 
 }
 
