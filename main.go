@@ -152,7 +152,7 @@ func UserGuess(round int) {
 		time.Sleep(2 * time.Second)
 	}
 	if round < 11 {
-		fmt.Printf("Next round you will need to pick %v cases", requiredSelections[round+1])
+		fmt.Printf("Next round you will need to pick %v cases \n", requiredSelections[round+1])
 	}
 	time.Sleep(2 * time.Second)
 
